@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnstile 認証テスト - TSグループ</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>TSグループ Turnstile 認証</h1>
+        <p>安全なアクセスを確保するために認証が必要です。</p>
+    </header>
+
+    <main>
+        <form id="captcha-form">
+            <h2>認証してください</h2>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAAAAAAAAkY"></div> 
+            <button type="submit">送信して認証を完了</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TSグループ 中央高原実験所</p>
+        <p>※ 中央高原実験所は一般人の立ち入りを禁止しています。</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
