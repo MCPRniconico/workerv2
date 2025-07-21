@@ -1,5 +1,14 @@
-name = "your-worker-name" # Workerの名前（ユニークである必要があります）
-main = "src/index.ts"      # Workerのメインファイル
-compatibility_date = "2024-07-22" # 現在の日付に更新
+name = "onetime-tohoku-ts-group" # 例: あなたのWorkerに分かりやすい名前を付けましょう
+main = "src/index.ts"           # Workerのメインファイルが src/index.ts にあるならこのままでOK
+                                # もし main.js や index.js/ts がルートにあるなら、そのパスに変更してください
+compatibility_date = "2024-07-22" # 今日(2025/07/21)の日付より古い場合は、新しい日付（例: "2025-07-21"）に更新してください。
 workers_dev = true
+
+# --- ★ ここから追加または修正してください ★ ---
+[site]
+bucket = "./public" # ★ これが重要！静的ファイルが置かれているディレクトリを指定します
+# --- ★ ここまで追加または修正してください ★ ---
+
 [vars]
+# ここは、あなたがWorker内で使用したい環境変数（例: MY_API_KEY など）を記述する場所です。
+# Turnstile のシークレットキーは、通常 Cloudflare ダッシュボードのWorker設定の「変数（Secrets）」で設定します。
