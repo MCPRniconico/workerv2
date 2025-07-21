@@ -1,0 +1,17 @@
+{
+  "name": "your-turnstile-pages-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Pages Turnstile Verification Example with separate files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250709.0", 
+    "typescript": "^5.0.0"
+  }
+}
