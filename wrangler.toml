@@ -1,0 +1,5 @@
+name = "your-worker-name" # Workerの名前（ユニークである必要があります）
+main = "src/index.ts"      # Workerのメインファイル
+compatibility_date = "2024-07-22" # 現在の日付に更新
+workers_dev = true
+[vars]
