@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 // Pages Functionのエンドポイント /verify-captcha へPOSTリクエストを送信
-                const response = await fetch('/functions/verify-captcha', {
+                const response = await fetch('/verify-captcha.ts', {
                     method: 'POST',
                     body: formData, // FormDataオブジェクトを直接送信すると、multipart/form-dataとして適切にエンコードされます
                 });
